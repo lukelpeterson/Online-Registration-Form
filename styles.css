@@ -1,0 +1,142 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  color: #999;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #444;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 5%;
+
+}
+hr {
+  height: 2px;
+  background: #3F4C6A;
+}
+.copyright {
+  font-style: italic;
+}
+
+/* Header Styles */
+
+header {
+  background: #3F4C6A;
+  color: #fff;
+  min-height: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
+.about {
+  border-bottom: 4px solid #3F4C6A;
+  margin-bottom: 3px;
+  padding: 15px 5%;
+}
+
+/* Form Styles */
+
+.form-container {
+  border-top: 2px solid #3F4C6A;
+}
+.contact {
+  border-bottom: 2px solid #3F4C6A;
+  padding-bottom: 1.5em;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #444;
+  line-height: 2em;
+}
+
+form {
+  text-align: left;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 2em 0;
+}
+input:placeholder-shown {
+  text-align: right;
+  font-style: italic;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  background: #eee;
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-size: 1em;
+}
+input[type="checkbox"],input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #3F4C6A;
+}
+label {
+  line-height: 2.5;
+}
+select {
+  background: #eee;
+  color: #999;
+  font-size: 1em;
+  text-indent: 10px;
+  height: 3em;
+  width: 100%;
+  border: none;
+}
+
+button[type="submit"] {
+  background: #00b6ab;
+  width: 100%;
+  padding: 0.9em 1.2em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+button[type="submit"]:hover {
+  background: #6CCECB;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+
+  fieldset.contact label {
+    display: block;
+    float: left;
+    margin-top: 1em;
+    clear: both;
+  }
+
+  input[type="text"], input[type="num"],  input[type="email"], input[type="tel"], select {
+    width: 80%;
+    margin: 10px 0;
+    align-content: center;
+    float: right;
+  }
+  label {
+    color: #555;
+  }
+}
